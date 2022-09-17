@@ -3,6 +3,6 @@ function changeImage() {
     if (image.src.match("bulbon")) {
       image.src = "/images/bulb1.gif";
     } else {
-      image.src = "";
-    }
+      image.src = "/images/bulb2.gif";
+    } 
   }
