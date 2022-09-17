@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <p style="font-size: 30px; color:  red;"> Turn on/off the light.</p> 
+<img id="myImage" onclick="changeImage()" src="/bulb1.gif" width="100" height="180">
+<!-- <img id="myImage" onclick="changeImage()" src="/bulb2.gif" width="100" height="180"> -->
+
+
+<script>
+function changeImage() {
+  var image = document.getElementById('myImage');
+  if (image.src.match("bulbon")) {
+    image.src = "/bulb1.gif";
+  } else {
+    image.src = "/bulb2.gif";
+  }
+}
+</script>
+
+</body>
+</html>
